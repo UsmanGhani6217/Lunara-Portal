@@ -1,20 +1,12 @@
-import { NextPage } from "next";
-import { ColorSpan, Line } from "../../styles/LayoutStyles";
+import type { NextPage } from "next";
 
-interface IncidentItemProps {
-  title: string;
-  colorSpanText: string;
-  fontSize?: string;
-}
-
-const IncidentItem: NextPage<IncidentItemProps> = ({ title = "", colorSpanText= "white", fontSize = "12px" }) => {
+import { ColorSpan } from "../../styles/LayoutStyles";
+export const IncidentItem: NextPage = ({isDetail= true}) => {
   return (
     <>
-      <h3>{title}</h3>
-      <Line />
-      <ColorSpan fontSize={fontSize}>{colorSpanText}</ColorSpan>
+      <h3>March 27, 2024</h3>
+      <hr style={{ backgroundColor: "#383838" }} />
+      <ColorSpan>No incidents reported today.</ColorSpan>
     </>
   );
 };
-
-export default IncidentItem;

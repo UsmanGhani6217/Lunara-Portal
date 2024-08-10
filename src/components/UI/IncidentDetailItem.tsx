@@ -1,31 +1,26 @@
 import type { NextPage } from "next";
 
-import { ColorSpan, Line, IncidentDetails } from "../../styles/LayoutStyles";
+import { ColorSpan } from "../../styles/LayoutStyles";
 import { IncidentSpan } from "../../styles/CommonStyles";
 
 export const IncidentDetailItem: NextPage = ({ isDetail = true }) => {
   return (
     <>
-      <IncidentDetails>
-        <ColorSpan>Mar 27, 00:56 UTC</ColorSpan>
-        <IncidentSpan color="#24a0ed">
-          <span className="span">Resolved</span> - This incident has been resolved.
-        </IncidentSpan>
-      </IncidentDetails>
-      <IncidentDetails>
-        <ColorSpan>Mar 27, 00:53 UTC</ColorSpan>
-        <IncidentSpan color="#bf40bf">
-          <span className="span">Monitoring </span> - This issue has been mitigated.
-        </IncidentSpan>
-      </IncidentDetails>
-      <IncidentDetails>
-        <ColorSpan>Mar 27, 00:49 UTC</ColorSpan>
-        <IncidentSpan color="#bf40bf">
-          Identified - /transactions/get and/transactions/recurring/get requests are experiencing elevated error rates.{" "}
-          {"\n"}
-          We are actively investigating and working to mitigate this issue.
-        </IncidentSpan>
-      </IncidentDetails>
+      <h3>March 27, 2024</h3>
+      <hr style={{ backgroundColor: "#383838" }} />
+          <h6>
+            Elevated /transactions/get and /transactions/recurring/get errors
+          </h6>
+          <p>
+            <ColorSpan>Mar 27, 00:56 UTC</ColorSpan>
+          </p>
+          <IncidentSpan>Resolved - This incident has been resolved.</IncidentSpan>
+          <p>
+            <ColorSpan>Mar 27, 00:56 UTC</ColorSpan>
+          </p>
+          <IncidentSpan>Monitoring  - This issue has been mitigated.</IncidentSpan>
+          <IncidentSpan>We are closely monitoring our systems as we recover.</IncidentSpan>
+      <ColorSpan>No incidents reported today.</ColorSpan>
     </>
   );
 };

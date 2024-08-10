@@ -1,1 +1,1 @@
-export const FooterData = [];
+export const FooterData = ['© 2023 Nod Financials, Inc. All rights reserved.', 'Terms of Services', 'Privacy Policy', 'Twitter', 'LinkedIn']
