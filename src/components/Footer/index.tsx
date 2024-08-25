@@ -7,7 +7,7 @@ export const Footer: NextPage = () => {
             <FooterWrapper>
                 {
                     FooterData.map(val =>{
-                        return <FooterSpan>{val}</FooterSpan>
+                        return <FooterSpan key={val}>{val}</FooterSpan>
                     })
                 }
             </FooterWrapper>
