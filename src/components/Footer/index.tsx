@@ -5,11 +5,15 @@ import { FooterData } from '../../../utils/constant';
 export const Footer: NextPage = () => {
     return (
             <FooterWrapper>
-                {
-                    FooterData.map(val =>{
-                        return <FooterSpan key={val}>{val}</FooterSpan>
-                    })
-                }
+                <div style={{display:"flex", gap:"70px"}}>
+                <FooterSpan >© 2023 Nod Financials, Inc. All rights reserved.</FooterSpan> 
+                <FooterSpan >Terms of Services</FooterSpan> 
+                <FooterSpan >Privacy Policy</FooterSpan> 
+                </div>
+                <div style={{display:"flex", gap:"40px"}}>
+                    <FooterSpan >Twitter</FooterSpan> 
+                    <FooterSpan >LinkedIn</FooterSpan> 
+                    </div>
             </FooterWrapper>
     )
 };

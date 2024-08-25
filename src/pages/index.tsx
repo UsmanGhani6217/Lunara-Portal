@@ -6,7 +6,7 @@ import BarChart from "../pages/chart";
 
 import { IncidentItem } from "../components/UI/IncidentItem";
 import { IncidentDetailItem } from "../components/UI/IncidentDetailItem";
-import { FaRegCheckCircle } from "react-icons/fa";
+import { FaRegCalendarMinus, FaRegCheckCircle } from "react-icons/fa";
 import TabsComponent from "../pages/tabs";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
@@ -38,7 +38,11 @@ import {
   LightBlueDot,
   SandBoxWrapper,
   LineSpan,
-  ChartColorSpan
+  ChartColorSpan,
+  TabContent,
+  TabItem,
+  TabItem1,
+  DatePickerWrapper
 } from "../styles/CommonStyles";
 import {
   ColorSpan,
@@ -214,8 +218,15 @@ const Home: NextPage = () => {
         <Button>View more <MdOutlineKeyboardArrowDown size={18} /> </Button>  
       </ButtonWrapper>
       <TabsWrapper>
-        <div>Tab Component</div>
-        <div></div>
+        <TabContent>
+          <TabItem>Past incident</TabItem>
+          <TabItem1 >Uptime</TabItem1>
+        </TabContent>
+        <DatePickerWrapper>
+          <div><FaRegCalendarMinus /></div>
+          <div  style={{fontSize:"14px" , fontWeight:"500"}}>28th - 21st March, 2024</div>
+          <div> <MdOutlineKeyboardArrowDown size={18} /></div>
+        </DatePickerWrapper>
       </TabsWrapper>
       <IncidentsWrapper>
         <IncidentItem />

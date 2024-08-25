@@ -45,12 +45,13 @@ export const FooterWrapper = styled.footer`
   color: white;
 `;
 export const FooterSpan = styled.span`
-  //styleName: Typography/Text Small/Regular;
   font-family: TT Interfaces;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
+  color: #C6C6C6;
+
 `;
 
 export const HeaderWrapper = styled.header`
@@ -131,7 +132,7 @@ export const HeaderBorder = styled.span`
 `;
 
 export const Title = styled.span`
-  font-family: "DM Serif Text", serif;
+  font-family: "TT Interfaces", serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 32px;

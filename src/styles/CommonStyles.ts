@@ -165,6 +165,47 @@ export const TabsWrapper = styled.div`
   justify-content: space-between;
   margin-top: 65px;
 `;
+export const TabContent = styled.div`
+  display: flex;
+  background-color: #1f1f1f;
+  width: 298px;
+  height: 45px;
+  border: 1px solid #383838;
+  padding: 4px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+`;
+export const TabItem = styled.div`
+  background-color: #e5edff;
+  padding: 8px 12px;
+  color: #0046ff;
+  border-radius: 6px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const TabItem1 = styled.div`
+  background-color: #1f1f1f;
+  color: #9b9b9b;
+  padding: 8px 12px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const DatePickerWrapper = styled.div`
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 244px;
+  background-color: #1f1f1f;
+  border: 1px solid #383838;
+  height: 44px;
+`;
 export const IncidentsWrapper = styled.div`
   margin-top: 44px;
 `;
